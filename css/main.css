@@ -12,15 +12,37 @@
 
 * { box-sizing: border-box; }
 
-body { background-color: var(--primary-color, #C3604C);
-       color: var(--secondary-color, #604330);
-	   font-family: var(--font-family);
-	   margin: 0;  
+body { 
+	background-color: var(--primary-color, #C3604C);
+	color: var(--secondary-color, #604330);
+	font-family: var(--font-family);
+	margin: 0;  
+	margin-bottom: 6em;
 }
-#wrapper { background-color: #231814;
-		   padding: 0;
+
+.big
+{
+    margin: auto;
+    width: 75%;
+    background-color: rgb(255, 196, 205);
+}
+
+#wrapper { 
+	background-color: #231814;
+	padding: 0;
 }   
 
+.indexItem
+{
+	padding: 1em;
+	background-color: #f8aabb;
+	margin: 1em;
+	border-radius: 2em;
+}
+
+.modal-backdrop {
+	z-index: 998;
+  }
 
 /*
 div:hover {
@@ -63,12 +85,16 @@ header a:hover     { color: var(--primary-color, #C3604C); }
 h1 { font-size: var(font-size-2em, 2em); }
 
 .hero-pig {
-    display: flex;
+	margin-top:3em;
+	margin-left: auto;
+	margin-right: auto;
+
+	height: 10em;
+	width: 100%;
+	background-size:95%;
     background-image: url(../images/banner.png);
-    background-size: 100% 100%;
-    height: 120px;
-    text-align: center;
-    padding-top: 25px;
+	background-repeat:no-repeat;
+	background-position: center;
 }
 
 h2 { color: var(--third-color, #B09077); }
@@ -118,12 +144,13 @@ img { padding-left: 10px;
 #mobile { display: inline; }
 #desktop { display: none; }
 
-footer { background-color: #FF8BB1;
-         font-size: .60em;
-		 font-style: italic;
-		 text-align: center;
-		 padding-bottom: 1em;
-		 border-top: 2px solid var(--third-color, #B09077);
+footer { 
+	background-color: #FF8BB1;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 1em;
+	border-top: 2px solid var(--third-color, #B09077);
 }
 table { margin: auto; 
       width: 90%;
@@ -137,39 +164,55 @@ form { display: flex;
 	   width: 80%; }
 input, textarea { margin-bottom: .5em; }
 
-#shopping-cart {
+#shopping-cart{
 	position: sticky;
 	top: 0;
-	box-shadow: 0px, 0px, 5px, black;
+
+	
 	z-index: 999;
 }
 
- @media (min-width: 600px) { 
-		header { 	padding-left: 0; 
-				text-align: center; }
-		h1        { font-size: 3em; }	
-		nav ul   { 	flex-flow: var(--nav-row-md);
-				justify-content: space-around; }
-		nav li    { 	border-bottom: none; }
-		#homehero     { background-image: url(hero.jpg);
-					  height: 50vh; }
-		#heromugs     { background-image: url(heromugs.jpg); }
-		#heroguitar { background-image: url(heroguitar.jpg); }
-		#flow { display: flex;
-				flex-direction: row; }    
-		#mobile   { display: none; }
-		#desktop { display: inline; }
-		.details { display: flex;
-				   flex-direction: row;  }
-		h4 { margin-left: 10%; 
-		    margin-right: 10%; }
-		form { width: 40%;
-		      display: grid; 
-			  grid-gap: 1em; gap: 1em; 
-			  grid-template-columns: 6em 1fr; }
-		input[type="submit"] { grid-column: 2 / 3;
-		                     width: 9em; }	
-        #herojobs { background-image: url(herojobs.jpg) }	
+#cartIcon
+{
+	padding: 0px;
+	margin: 0px;
+	
+	height:auto;
+	border-radius: 1em;;
+	box-shadow: 0px 0px 5px black
+}
+
+#myModal
+{
+	float: none;
+}
+
+@media (min-width: 600px) { 
+	header { 	padding-left: 0; 
+			text-align: center; }
+	h1        { font-size: 3em; }	
+	nav ul   { 	flex-flow: var(--nav-row-md);
+			justify-content: space-around; }
+	nav li    { 	border-bottom: none; }
+	#homehero     { background-image: url(hero.jpg);
+				  height: 50vh; }
+	#heromugs     { background-image: url(heromugs.jpg); }
+	#heroguitar { background-image: url(heroguitar.jpg); }
+	#flow { display: flex;
+			flex-direction: row; }    
+	#mobile   { display: none; }
+	#desktop { display: inline; }
+	.details { display: flex;
+			   flex-direction: row;  }
+	h4 { margin-left: 10%; 
+		margin-right: 10%; }
+	form { width: 40%;
+		  display: grid; 
+		  grid-gap: 1em; gap: 1em; 
+		  grid-template-columns: 6em 1fr; }
+	input[type="submit"] { grid-column: 2 / 3;
+						 width: 9em; }	
+	#herojobs { background-image: url(herojobs.jpg) }	
 }
 @media (min-width: 1024px) { 
 		@supports (display: grid) {
@@ -195,10 +238,5 @@ body{
     background-size:25em;
 }
 
-.big
-{
-    margin: auto;
-    width: 75%;
-    background-color: rgb(255, 196, 205);
-}
+
 

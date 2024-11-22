@@ -9,28 +9,66 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-      <div class="big">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <header>
-                    <h1><a href="index.html">Freaky Pig.Biz</a></h1>
-                    </header>
-                </div>
+
+        <div id="shopping-cart">
+            <!--modal dialog-->
+            <!--button to launch to modal popup-->
+            <div>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img src="images/shopIconButton.png" alt="shopping cart" id="cartIcon" >
+              </button>
             </div>
+    
+            <!--the modal popup-->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!--header-->
+                  <div class="modal-header text-center">
+                      <h2 class="modal-title">BLACK FRIDAY SALE</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+    
+                  <!--body-->
+                  <div class="modal-body">
+                    <div class="lead text-center">
+                        <p>Your cart is currently empty.</p>
+                        <p>For today only save 25% on all purchases.</p>
+                        <a href="products.html">Start Shopping</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="big">
+        <div class="hero-pig">  
+            <a href="index.html" ></a>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li> 
-                    </ul>
-                    </nav>
+        <nav class="navbar navbar-expand-lg custom-navbar-color">
+            <div class="container-fluid custom-navbar-pinker" >
+              CERTIFIED FREAKY PRICES
+              
+              <div class="collapse navbar-collapse" id="navbarText">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                  <button type="button" class="btn custom-navbar-pink">HOME</button>
+                </a>
+                
+                <div class="dropdown">
+                  <button class="btn custom-navbar-pink dropdown-toggle" type="button" id="dropdownMenuButton1" name="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    PRODUCTS
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="products.html">INVENTORY</a></li>
+                    <li><a class="dropdown-item" href="product1.html">SICKLY PIG</a></li>
+                    <li><a class="dropdown-item" href="product2.html">WHIMSICAL PIG</a></li>
+                    <li><a class="dropdown-item" href="product3.html">ROTUND</a></li>
+                  </ul>
                 </div>
             </div>
+          </nav>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 mx-auto W-100 p-3">

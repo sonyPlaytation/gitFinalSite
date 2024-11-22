@@ -10,85 +10,70 @@
     </head>
     
     <body>
-      <div class="big">
-        <div class="container">
-          
-          <div class="row">
-            <div class="col-11">
-                <a href="index.html" class="hero-pig"></a>
-            </div>
-
-            <div class="col-1">
-              <div>
-                <!--modal dialog-->
-                <!--button to launch to modal popup-->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
-                  <img src="images/shopIconButton.png" alt="shopping cart" >
-                </button>
-
-                <!--the modal popup-->
-                <div class="modal" id="myModal">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <!--header-->
-                      <div class="modal-header text-center">
-                          <h2 class="modal-title">BLACK FRIDAY SALE</h2>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                      </div>
-
-                      <!--body-->
-                      <div class="modal-body">
-                        <div class="lead text-center">
-                            <p>Your cart is currently empty.</p>
-                            <p>For today only save 25% on all purchases.</p>
-                            <a href="products.html">Start Shopping</a>
-                        </div>
-                      </div>
-                    </div>
+      
+      <div id="shopping-cart">
+          <!--modal dialog-->
+          <!--button to launch to modal popup-->
+          <div>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+              <img src="images/shopIconButton.png" alt="shopping cart" id="cartIcon" >
+            </button>
+          </div>
+  
+          <!--the modal popup-->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!--header-->
+                <div class="modal-header text-center">
+                    <h2 class="modal-title">BLACK FRIDAY SALE</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+  
+                <!--body-->
+                <div class="modal-body">
+                  <div class="lead text-center">
+                      <p>Your cart is currently empty.</p>
+                      <p>For today only save 25% on all purchases.</p>
+                      <a href="products.html">Start Shopping</a>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
-      </div>
+
+      <div class="big">
         
-        <br>
-        <hr>
+        <div class="hero-pig">  
+          <a href="index.html" ></a>
+        </div>
 
         <nav class="navbar navbar-expand-lg custom-navbar-color">
-          <div class="container-fluid custom-navbar-pinker">
+          <div class="container-fluid custom-navbar-pinker" >
             CERTIFIED FREAKY PRICES
             
-            <!--
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            -->
-            
             <div class="collapse navbar-collapse" id="navbarText">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                <button type="button" class="btn custom-navbar-pink">HOME</button>
+              </a>
               
-                
-                  <a class="nav-link active" aria-current="page" href="index.html">
-                    <button type="button" class="btn custom-navbar-pink">HOME</button>
-                  </a>
-                
-                
-                <div class="dropdown">
-                  <button class="btn custom-navbar-pink dropdown-toggle" type="button" id="dropdownMenuButton1" name="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    PRODUCTS
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="products.html">INVENTORY</a></li>
-                    <li><a class="dropdown-item" href="product1.html">SICKLY PIG</a></li>
-                    <li><a class="dropdown-item" href="product2.html">WHIMSICAL PIG</a></li>
-                    <li><a class="dropdown-item" href="product3.html">ROTUND</a></li>
-                  </ul>
-                </div>
-              
-
+              <div class="dropdown">
+                <button class="btn custom-navbar-pink dropdown-toggle" type="button" id="dropdownMenuButton1" name="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUCTS
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="products.html">INVENTORY</a></li>
+                  <li><a class="dropdown-item" href="product1.html">SICKLY PIG</a></li>
+                  <li><a class="dropdown-item" href="product2.html">WHIMSICAL PIG</a></li>
+                  <li><a class="dropdown-item" href="product3.html">ROTUND</a></li>
+                </ul>
+              </div>
           </div>
         </nav>
+        
         <br>
+        
         <div class="container">
           <div class="row">
               <div class="col">
@@ -103,8 +88,11 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+
                     <h3>Freaky Pig features:</h3>
                     <dl>
+
+                      <div class="indexItem">
                         <dt>                    
                             <a href="products.html">
                               <img src="images/product1.png" alt="Sickly Pig" class="img-thumbnail">
@@ -112,21 +100,29 @@
                             
                         </dt>
                         <dd>This charming pig is the perfect blend of rustic charm and whimsical flair, designed to bring warmth and character to any space. Crafted from soft, durable materials with a slightly textured finish, its rounded, compact body exudes a sense of coziness, while its charming snout and perky ears add delightful detail. The pig’s sturdy, gentle legs offer balance and stability, making it ideal as a decorative accent or functional piece in both modern and traditional settings. Whether placed in a living room, kitchen, or child's room, this playful piece is sure to spark conversation and add an element of fun to your home.</dd>
-                    
-                        <li>
+                      </div>
+
+                      <div class="indexItem">  
+                        <dt>
                             <a href="products.html">
                               <img src="images/product2.png" alt="Sickly Pig" class="img-thumbnail">
                             </a>
-                            <dl>The pig is a unique and captivating creature, offering both beauty and functionality in any setting. With its sturdy, compact frame, this animal provides a grounding presence, while its smooth, pink-toned skin exudes warmth and softness. The pig's expressive face, complete with large, rounded ears and a distinctive snout, adds character and personality to any environment. Its strong, stocky legs offer both stability and charm, making it a surprisingly versatile companion. Whether lounging in a field or interacting with its surroundings, this delightful creature blends practicality with an endearing, rustic elegance that brings life to any space.</dl>
-                        </li>
-                        
-                        <li>
+                            <dd>The pig is a unique and captivating creature, offering both beauty and functionality in any setting. With its sturdy, compact frame, this animal provides a grounding presence, while its smooth, pink-toned skin exudes warmth and softness. The pig's expressive face, complete with large, rounded ears and a distinctive snout, adds character and personality to any environment. Its strong, stocky legs offer both stability and charm, making it a surprisingly versatile companion. Whether lounging in a field or interacting with its surroundings, this delightful creature blends practicality with an endearing, rustic elegance that brings life to any space.</dd>
+                          </dt>
+
+                      </div>
+                       
+                      <div class="indexItem">      
+                        <dt>
                             <a href="products.html">
                               <img src="images/product3.png" alt="Sickly Pig" class="img-thumbnail">
                             </a>
-                        </li>
-                        <dl>This real living pig offers a unique and functional presence, ideal for adding both character and utility to your outdoor space. With a soft, smooth pink exterior and a well-proportioned, sturdy body, it brings a rustic charm that effortlessly complements its environment. The pig's large, expressive eyes and twitching snout lend a touch of whimsy, while its strong, muscular legs provide dependable support for a variety of activities. Whether roaming freely or lounging contentedly, this animal serves as both a delightful companion and an unexpected conversation piece, enhancing the atmosphere with its blend of charm and practicality.</dl>
-                    </ul>
+                          </dt>
+                        <dd>This real living pig offers a unique and functional presence, ideal for adding both character and utility to your outdoor space. With a soft, smooth pink exterior and a well-proportioned, sturdy body, it brings a rustic charm that effortlessly complements its environment. The pig's large, expressive eyes and twitching snout lend a touch of whimsy, while its strong, muscular legs provide dependable support for a variety of activities. Whether roaming freely or lounging contentedly, this animal serves as both a delightful companion and an unexpected conversation piece, enhancing the atmosphere with its blend of charm and practicality.</dd>
+                      </div>
+
+                    </dl>
+                  
                     <div>
                         1249 Hog Bay Road<br>
                         Ellison Bay, WI 54210<br>
