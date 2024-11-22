@@ -21,9 +21,12 @@ body { background-color: var(--primary-color, #C3604C);
 		   padding: 0;
 }   
 
+
+/*
 div:hover {
 
 }
+*/
 
 header {
 	background-repeat: var(--hero-repeat);
@@ -32,6 +35,11 @@ header {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin: auto;
+}
+
+#navbarText
+{
+	line-height: 3em;
 }
 
 .custom-navbar-pinker
@@ -131,8 +139,8 @@ input, textarea { margin-bottom: .5em; }
 
 #shopping-cart {
 	position: sticky;
-	box-shadow: 0px, 0px, 5px, black;
 	top: 0;
+	box-shadow: 0px, 0px, 5px, black;
 	z-index: 999;
 }
 
