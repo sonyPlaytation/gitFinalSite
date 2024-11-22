@@ -54,7 +54,7 @@ header a:visited { color: #231814; }
 header a:hover     { color: var(--primary-color, #C3604C); }
 h1 { font-size: var(font-size-2em, 2em); }
 
-header h1 {
+.hero-pig {
 	display: flex;
 	background-image: url(../images/banner.png);
 	background-size: 100% 100%;
@@ -163,22 +163,8 @@ input, textarea { margin-bottom: .5em; }
 		                     width: 9em; }	
         #herojobs { background-image: url(herojobs.jpg) }	
 }
-@media (min-width: 1024px) { 
-		@supports (display: grid) {
-		   header { grid-area: header; }	
-		   nav      { grid-area: nav; }
-		   main    { grid-area: main; }		
-		   footer  { grid-area: footer; }
-		   #wrapper { display: grid;
-		              grid-template:
-				         "header header" 
-						 "nav    main" 
-						 "footer footer"
-						 / 200px ; }		
-		nav ul { flex-direction: column; }		
-		header {  background-image: url(coffeelogo.jpg); }	
-   }				
-}
+				
+
 body{
     background-color: pink;
     background-image: url(../images/pigBG.jpg);
