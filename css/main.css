@@ -20,6 +20,11 @@ body { background-color: var(--primary-color, #C3604C);
 #wrapper { background-color: #231814;
 		   padding: 0;
 }   
+
+div:hover {
+
+}
+
 header {
 	background-repeat: var(--hero-repeat);
 	color: #231814;
@@ -29,9 +34,18 @@ header {
 	margin: auto;
 }
 
-.custom-navbar-color
+.custom-navbar-pinker
 {
 	background-color: #FF8BB1;
+}
+
+.custom-navbar-pink {
+	background-color: pink;
+}
+
+.navbar-wrap {
+	display: flex;
+	float: right;
 }
 
 header a { text-decoration: none; }
@@ -95,7 +109,8 @@ img { padding-left: 10px;
 
 #mobile { display: inline; }
 #desktop { display: none; }
-footer { background-color: var(--primary-color, #C3604C);
+
+footer { background-color: #FF8BB1;
          font-size: .60em;
 		 font-style: italic;
 		 text-align: center;
@@ -113,6 +128,14 @@ form { display: flex;
 	   padding-left: 1em; 
 	   width: 80%; }
 input, textarea { margin-bottom: .5em; }
+
+#shopping-cart {
+	position: sticky;
+	box-shadow: 0px, 0px, 5px, black;
+	top: 0;
+	z-index: 999;
+}
+
  @media (min-width: 600px) { 
 		header { 	padding-left: 0; 
 				text-align: center; }
