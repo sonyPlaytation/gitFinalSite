@@ -159,10 +159,9 @@ input, textarea { margin-bottom: .5em; }
 body{
     background-color: pink;
     background-image: url(../images/pigBG.jpg);
-    background-repeat: none;
+    background-repeat: repeat;
     background-position: 0%;
     background-size:25em;
-    
 }
 
 .big
