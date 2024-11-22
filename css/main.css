@@ -1,8 +1,16 @@
-.big{
+body{
     background-color: pink;
-    background-image: url(images/pigBG.jpg);
+    background-image: url(../images/pigBG.jpg);
     background-repeat: none;
     background-position: 0%;
-    background-size: cover;
+    background-size:25em;
+    
+}
+
+.big
+{
+    margin: auto;
+    width: 75%;
+    background-color: rgb(255, 196, 205);
 }
 
